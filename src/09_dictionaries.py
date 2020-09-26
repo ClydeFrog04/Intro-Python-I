@@ -49,6 +49,11 @@ waypoints.append(
 # waypoints list.
 
 # YOUR CODE HERE
+for point in waypoints:
+    if point["name"] == "a place":
+        point["name"] = "not a real place"
+        point["lon"] = -130
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+print("Waypoints: ", *waypoints, sep="\n")
